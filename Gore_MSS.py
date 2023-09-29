@@ -11,11 +11,11 @@ from pynput.keyboard import Key, Controller
 
 #TWO PRESS DOWN
 
-path="C:/Users/SHBG7410/Desktop/DILIP/Rishika/gore_main_excel.xlsx"
+path="C:/Users/Desktop/main_excel.xlsx"
 
 Wb=xlrd.open_workbook(path)
 
-p9="C:/Users/SHBG7410/Desktop/DILIP/Rishika/TEST/Images/Capture.png"
+p9="C:/Users/Desktop/TEST/Images/Capture.png"
 
 ss=Wb.sheet_by_index(0)
 var=ss.nrows
@@ -88,8 +88,7 @@ from docx import Document
 from docx.shared import Inches
 d=Document()
 
-d.add_heading('GORE IP Bandwidth Utilization GRAPHS',0)
-#d.add_paragraph('JE Americas',style='List Bullet')
+d.add_heading('IP Bandwidth Utilization GRAPHS',0)
 d.add_paragraph('Monthly- GRAPHS',style='List Bullet')
 
 
@@ -104,6 +103,6 @@ for r in range(0,1):
         d.add_picture(st+".png",width=Inches(6.77))
 
 
-d.save("Gore Bandwidth Utilization.docx")
+d.save("Bandwidth Utilization.docx")
 print("Documrnt Created")
 
