@@ -104,5 +104,5 @@ for r in range(0,1):
 
 
 d.save("Bandwidth Utilization.docx")
-print("Documrnt Created")
+print("Document Created")
 
